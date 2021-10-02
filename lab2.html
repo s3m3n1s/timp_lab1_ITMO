@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="lab2.css" media="screen" />
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа №2</title>
+</head>
+<body id="body" oncopy="return false;" onmousedown="return false;" onclick="return true;">
+<p id="defendedText"> Много разного случайного текста, который вы не сможете скопировать. </p>
+    <script src="./lab2.js"></script>
+<p id="secretcode"> Для разрешения скриншотов введите секретный 8и значный код </p>
+<input type="button" value="Ввести пароль!" OnClick="passwdclick()">
+
+          <form name="panel" class="wrapper" hidden="hidden">
+                <table class="main">
+                    <tr class="display">
+                         <td colspan="4"><input type="text" name="input"></td>
+                    </tr>
+                    <tr class="buttons">
+                         <td><input type="button" value="1" OnClick="panel.input.value += '1'"></td>
+                         <td><input type="button" value="2" OnClick="panel.input.value += '2'"></td>
+                         <td><input type="button" value="3" OnClick="panel.input.value += '3'"></td>
+                    </tr>
+                    <tr class="buttons">
+                         <td><input type="button" value="4" OnClick="panel.input.value += '4'"></td>
+                         <td><input type="button" value="5" OnClick="panel.input.value += '5'"></td>
+                         <td><input type="button" value="6" OnClick="panel.input.value += '6'"></td>
+                    </tr>
+                    <tr class="buttons">
+                         <td><input type="button" value="7" OnClick="panel.input.value += '7'"></td>
+                         <td><input type="button" value="8" OnClick="panel.input.value += '8'"></td>
+                         <td><input type="button" value="9" OnClick="panel.input.value += '9'"></td>
+                    </tr>
+                    <tr class="buttons">
+                         <td><input type="reset" value="x" OnClick="panel.input.value = ''"></td>
+                         <td><input type="button" value="0" OnClick="panel.input.value += '0'"></td>
+                         <td><input type="button" value="Ok" OnClick="passwdcheck()"></td>
+                     </tr>
+               </table>
+          </form>
+
+</body>
+
+<div id="myModal" class="modal">
+  <img class="modal-content" id="BanImg" src ="./lab2.jpg" hidden="hidden">
+  <div id="caption"></div>
+</div>
+
+</html>
